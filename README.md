@@ -96,9 +96,9 @@ Creating any of the four basic types of documents is very easy:
     my_tokens = UTF8String["To", "be", "or", "not", "to", "be..."]
     td = TokenDocument(my_tokens)
 
-    my_ngrams = (UTF8String => Int)["To" => 1, "be" => 2,
+    my_ngrams = Dict{UTF8String, Int}("To" => 1, "be" => 2,
                                     "or" => 1, "not" => 1,
-                                    "to" => 1, "be..." => 1]
+                                    "to" => 1, "be..." => 1)
     ngd = NGramDocument(my_ngrams)
 
 For every type of document except a `FileDocument`, you can also construct a
