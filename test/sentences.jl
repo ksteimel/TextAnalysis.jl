@@ -7,7 +7,7 @@ module TestSentenceTok
 	sample_text = """\"Colorless green ideas sleep furiously\". Noam Chomsky's famous quote is emblazoned upon the minds of linguists the world over. What does this expression actually means?"
 	"""
 
-	sentences = TextAnalys.sentencetok(Languages.EnglishLanguage, sample_text)
+	sentences = TextAnalysis.sentencessplit(Languages.EnglishLanguage, sample_text)
 
 	@assert isequal(
 		tkns,
